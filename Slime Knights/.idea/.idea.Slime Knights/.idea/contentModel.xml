@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Paras Unity\Github\Brackeygamejam5\Slime Knights" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="enemy.cs" t="Include" />
+        <e p="Player" t="Include">
+          <e p="Attacking.cs" t="Include" />
+          <e p="CharacterController2D.cs" t="Include" />
+          <e p="Merge.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Slime Knights.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\rajmo\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rajmo\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Slime Knights.1105951542.00" t="ExcludeRecursive" />
+  </component>
+</project>
