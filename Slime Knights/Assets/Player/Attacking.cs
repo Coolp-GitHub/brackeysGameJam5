@@ -1,38 +1,39 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using Enemy;
 using UnityEngine;
 
-public class Attacking : MonoBehaviour
+namespace Player
 {
-    public string key;
-    public Transform atkPoint;
-    public int dmg = 24;
-    public float atkRange = 0.5f;
-
-    public LayerMask enemyLayers;
-    void Update()
+    public class Attacking : MonoBehaviour
     {
-        if (Input.GetKeyDown(key))
+        public string key;
+        public Transform atkPoint;
+        public int dmg = 24;
+        public float atkRange = 0.5f;
+
+        public LayerMask enemyLayers;
+        void Update()
         {
-            Attack();
+            if (Input.GetKeyDown(key))
+            {
+                Attack();
+            }
+        
         }
+
+        void Attack()
+        {
+            Collider2D[] hitEnemy =  Physics2D.OverlapCircleAll(atkPoint.position, atkRange, enemyLayers);
+
+            foreach (Collider2D Enemy in hitEnemy)
+            {
+                Enemy.GetComponent<EnemyHealth>().TakeDmg(dmg);
+            }
+        }
+
+        private void OnDrawGizmosSelected()
+        {
         
-    }
-
-    void Attack()
-    {
-       Collider2D[] hitEnemy =  Physics2D.OverlapCircleAll(atkPoint.position, atkRange, enemyLayers);
-
-       foreach (Collider2D Enemy in hitEnemy)
-       {
-          Enemy.GetComponent<enemy>().TakeDmg(dmg);
-       }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        
-        Gizmos.DrawWireSphere(atkPoint.position,atkRange);
+            Gizmos.DrawWireSphere(atkPoint.position,atkRange);
+        }
     }
 }

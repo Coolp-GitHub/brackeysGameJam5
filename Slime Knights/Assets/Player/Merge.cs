@@ -32,11 +32,7 @@ public class Merge : MonoBehaviour
             Merged.position = new Vector3(MergedPos.x, MergedPos.y + 0.75f, 0f);
 
         }
-        else
-        {
-
-        }
-
+        
         
 
 
@@ -50,16 +46,19 @@ public class Merge : MonoBehaviour
 
         if (stateEn == States.TwoP)
         {
+            
             mergedPlayer.SetActive(false);
             P1obj.SetActive(true);
             P2obj.SetActive(true);
-
+            
            mergedPlayer.GetComponent<CharacterController2D>().enabled= false;
 
 
         }
         else
         {
+            P1.position = new Vector2(mergedPlayer.transform.position.x + 1, mergedPlayer.transform.position.y);
+            P2.position = new Vector2(mergedPlayer.transform.position.x - 1, mergedPlayer.transform.position.y);
             mergedPlayer.SetActive(true);
             P1obj.SetActive(false);
             P2obj.SetActive(false);
