@@ -24,9 +24,9 @@ namespace Player
         {
             Collider2D[] hitEnemy =  Physics2D.OverlapCircleAll(atkPoint.position, atkRange, enemyLayers);
 
-            foreach (Collider2D Enemy in hitEnemy)
+            foreach (Collider2D enemy in hitEnemy)
             {
-                Enemy.GetComponent<EnemyHealth>().TakeDmg(dmg);
+                enemy.GetComponent<EnemyHealth>().TakeDmg(dmg);
             }
         }
 

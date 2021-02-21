@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using DG.Tweening;
 namespace Enemy
 {
@@ -7,9 +8,19 @@ namespace Enemy
         public int maxHealth = 100;
         [SerializeField] private int currentHealth;
         public int dmg = 2;
-        void Start()
+        public Transform deathPoint;
+
+        private void Start()
         {
             currentHealth = maxHealth;
+        }
+
+        private void Update()
+        {
+            if (deathPoint.position.y > transform.position.y)
+            {
+                Die();
+            }
         }
 
         public void TakeDmg(int dmg)
@@ -22,9 +33,11 @@ namespace Enemy
             {
                 Die();
             }
+
+            
         }
 
-        void Die()
+        private void Die()
         {
             Destroy(gameObject);
         }
