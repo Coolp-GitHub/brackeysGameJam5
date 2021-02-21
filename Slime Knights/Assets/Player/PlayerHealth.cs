@@ -3,15 +3,18 @@ using System.Security.Cryptography;
 using Enemy;
 using UnityEngine;
 using DG.Tweening;
+using TreeEditor;
+
 namespace Player
 {
     public class PlayerHealth : MonoBehaviour
     {
 
         public int maxHealth;
-        [SerializeField] private int currentHealth;
+         public  int currentHealth;
         [SerializeField] private float timer;
         [SerializeField] private int enemyDmg;
+        public Transform deathLine;
         void Start()
         {
            Respawn();
@@ -20,6 +23,11 @@ namespace Player
         private void Update()
         {
             if (currentHealth <= 0)
+            {
+                Respawn();
+            }
+
+            if (transform.position.y <= deathLine.position.y)
             {
                 Respawn();
             }

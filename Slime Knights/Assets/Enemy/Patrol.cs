@@ -19,7 +19,7 @@ namespace Enemy
 
 
 
-            RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1f);
+            RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 3f);
 
 
         
