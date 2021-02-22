@@ -15,6 +15,8 @@ namespace Player
         [SerializeField] private float timer;
         [SerializeField] private int enemyDmg;
         public Transform deathLine;
+
+        public HealthBar hpBar;
         void Start()
         {
            Respawn();
@@ -49,13 +51,16 @@ namespace Player
 
          void Dmg(int dmg)
          {
-             currentHealth -= dmg;
-         }
+
+            currentHealth -= dmg;
+            hpBar.SetHealth(currentHealth);
+        }
 
          void Respawn()
          {
              currentHealth = maxHealth;
              transform.position = new Vector3(0, 0, 0);
+             hpBar.MaxHealth(maxHealth);
          }
     }
 }

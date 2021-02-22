@@ -2,29 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5751d722-ec11-4cd0-a894-d429a05e349c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Slime Knights/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slime Knights/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Slime Knights/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slime Knights/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Slime Knights/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slime Knights/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Attacking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Attacking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/25/25a40e646e96fffae1dd50696630b73d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/38/38114a5247f801346d1ba624884ef398" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/45/45670b254e0643a6cb7fe00207eefd03" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/47/47ceb9b9fe9595907699ff7a279e1d5e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/67/670d416661f676ecf663b4e1fbf28b14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/77/775e887586dee88c26cb546b69bb80ba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f7/f75c5df383e66ac99e401a123ef7d1a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0e/0e9e5d85dd76abc62b4e9210bb1e6a3c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/30/30e86dcd732dc91292ad9b424d2aad2e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/36/36b8cd4a64d850ad8ed3dfb7e0d6aa85" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/50/506b2763a3d21384796d37867b614c33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/56/56c28c6df54c9940016369aac269f100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/570f0b0baa8f98cea0cbd4cb664d6597" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9e/9e302170bb647927d233ef603a78a5bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b9/b9a40a40d7e1e49d80526adcf525129e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c1/c13921ab2b98762e16073f19e002a07f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c2a8f566d4be5cd5db2c839309ef310b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/bc8624-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/bc8624-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/b14912-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/b14912-mainStage.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +58,9 @@
       <option value="$PROJECT_DIR$/Assets/Player/Deathparticle.cs" />
       <option value="$PROJECT_DIR$/Assets/Enemy/Patrol.cs" />
       <option value="$PROJECT_DIR$/Assets/Player/PlayerHealth.cs" />
-      <option value="$PROJECT_DIR$/Assets/Player/Attacking.cs" />
       <option value="$PROJECT_DIR$/Assets/Enemy/EnemyHealth.cs" />
+      <option value="$PROJECT_DIR$/Assets/Player/Attacking.cs" />
+      <option value="$PROJECT_DIR$/Assets/Player/HealthBar.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oZhKt2GJA6SkbnponmPSra8HCi" />
@@ -130,6 +127,8 @@
       <workItem from="1613850091234" duration="2601000" />
       <workItem from="1613932310141" duration="1657000" />
       <workItem from="1613946480002" duration="896000" />
+      <workItem from="1614030746135" duration="1313000" />
+      <workItem from="1614032686956" duration="129000" />
     </task>
     <servers />
   </component>

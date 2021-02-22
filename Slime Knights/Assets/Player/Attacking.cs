@@ -11,16 +11,17 @@ namespace Player
         public float atkRange = 0.5f;
 
         public LayerMask enemyLayers;
-        void Update()
+
+        private void Update()
         {
             if (Input.GetKeyDown(key))
             {
                 Attack();
             }
-        
         }
 
-        void Attack()
+        // ReSharper disable Unity.PerformanceAnalysis
+        private void Attack()
         {
             Collider2D[] hitEnemy =  Physics2D.OverlapCircleAll(atkPoint.position, atkRange, enemyLayers);
 

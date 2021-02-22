@@ -12,6 +12,7 @@
         <e p="Player" t="Include">
           <e p="Attacking.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
+          <e p="HealthBar.cs" t="Include" />
           <e p="Merge.cs" t="Include" />
           <e p="PlayerHealth.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
