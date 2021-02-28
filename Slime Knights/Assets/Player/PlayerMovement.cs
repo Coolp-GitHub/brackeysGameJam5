@@ -11,7 +11,8 @@ namespace Player
         public float hmove = 0f;
 
         private bool _jump = false;
-    
+
+        [SerializeField] Quaternion rotation;
 
  
         public string jump;
@@ -46,6 +47,7 @@ namespace Player
             controller.Move(hmove * speed ,false,_jump);
         
             _jump = false;
+
         
         }
     }
