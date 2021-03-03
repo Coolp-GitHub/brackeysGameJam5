@@ -6,17 +6,15 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] GameObject closestObj;
     public GameObject enemy;
-    float seeRange = 1.5f;
-   // [SerializeField] float closestDistance = Mathf.Infinity;
+    float seeRange = 3f;
+
     public LayerMask playerLayer;
 
 
-    private Vector2 x;
+
     private Vector2 vectorxy;
-    void Start()
-    {
-        x = new Vector2(9999999, 9999999);
-    }
+ 
+    
 
    
     void Update()
@@ -31,15 +29,20 @@ public class EnemyAI : MonoBehaviour
 
             float c = vectorxy.x + vectorxy.y;
 
-            c = Mathf.Sqrt(c); 
-        }
+            c = Mathf.Sqrt(c);
 
-        for (int i = 0; i > closestOBJ.Length; i++)
-        {
-            if (closestOBJ[i].transform.position.x> x.x  && (closestOBJ[i].transform.position.y > x.y))
+            float pc = 99999;
+
+            if (c < pc)
             {
-                closestObj = closestOBJ[i].gameObject;
+                closestObj = obj.gameObject;
             }
+
+
+       
+            pc = c;
+
+       
         }
     }
 }
