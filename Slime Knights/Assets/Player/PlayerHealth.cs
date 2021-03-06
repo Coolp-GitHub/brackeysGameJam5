@@ -40,15 +40,15 @@ namespace Player
         {
             if (currentHealth <= 0)
             {
-                DeathScreen();
-                StartCoroutine(respawnCooldown());
-           
+                // DeathScreen();
+                //StartCoroutine(respawnCooldown());
+                Respawn();
+
             }
 
             if (transform.position.y <= deathLine.position.y)
             {
-                DeathScreen();
-                StartCoroutine(respawnCooldown());
+                Respawn();
                 
             }
         }
