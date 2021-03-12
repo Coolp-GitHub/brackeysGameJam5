@@ -8,27 +8,32 @@ public class EnemyAI : MonoBehaviour
 
     public GameObject enemy;
 
-    float seeRange = 3f;
+    public Transform groundDet;
+
+    public float seeRange = 3f;
 
     public LayerMask playerLayer;
     public LayerMask ground;
-    
+
     private Vector2 vectorxy;
+
+
+    Vector3 offset;
 
     void Update()
     {
-       
-        
+        offset = new Vector3(0, 1, 0);
+
         Collider2D[] closestOBJ = Physics2D.OverlapCircleAll(enemy.transform.position, seeRange, playerLayer);
 
-        
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDet.position, Vector2.down, 2f);
 
         foreach (Collider2D obj in closestOBJ)
         {
-            vectorxy = new Vector2(Mathf.Abs(enemy.transform.position.x - obj.transform.position.x), Mathf.Abs( enemy.transform.position.y - obj.transform.position.y));
+            vectorxy = new Vector2(Mathf.Abs(enemy.transform.position.x - obj.transform.position.x), Mathf.Abs(enemy.transform.position.y - obj.transform.position.y));
 
 
-            vectorxy = new Vector2(Mathf.Pow(vectorxy.x,vectorxy.x) , Mathf.Pow(vectorxy.y, vectorxy.y));
+            vectorxy = new Vector2(Mathf.Pow(vectorxy.x, vectorxy.x), Mathf.Pow(vectorxy.y, vectorxy.y));
 
 
             float c = vectorxy.x + vectorxy.y;
@@ -44,16 +49,21 @@ public class EnemyAI : MonoBehaviour
 
             pc = c;
 
-          
+
         }
 
 
         if (closestObj != null)
         {
-            RaycastHit2D hit = Physics2D.Raycast(gameObject.transform.position, (gameObject.transform.position - closestObj.transform.position).normalized, seeRange, ground);
+            RaycastHit2D hit = Physics2D.Raycast(gameObject.transform.position + offset, (gameObject.transform.position - closestObj.transform.position).normalized, seeRange, ground);
 
-          
+
             Debug.Log(hit.collider);
+        }
+
+        if (groundInfo.collider == false)
+        {
+            Jump();
         }
     }
     void OnDrawGizmosSelected()
@@ -63,5 +73,13 @@ public class EnemyAI : MonoBehaviour
 
     }
 
+    void Jump()
+    {
+        Rigidbody2D enemyRB = enemy.GetComponent<Rigidbody2D>();
+
+        enemyRB.AddForce(transform.up * 2,ForceMode2D.Impulse);
+
+        return;
+    }
 
 }
